@@ -491,7 +491,7 @@ import java.io.IOException;
 //      for (int i = 0; i < trackCount; i++) {
 //        sampleQueues.valueAt(i).reset(!prepared || trackEnabledStates[i]);
 //      }
-      loadable.setLoadPosition(0);
+      loadable.setLoadPosition(0,0);
     }
   }
 
