@@ -480,13 +480,13 @@ import java.io.IOException;
       // available media. For this case there's no way to continue loading from where a
       // previous load finished, so it's necessary to load from the start whenever commencing
       // a new load.
-      lastSeekPositionUs = 0;
-      notifyReset = prepared;
-      int trackCount = sampleQueues.size();
-      for (int i = 0; i < trackCount; i++) {
-        sampleQueues.valueAt(i).reset(!prepared || trackEnabledStates[i]);
-      }
-      loadable.setLoadPosition(0, 0);
+//      lastSeekPositionUs = 0;
+//      notifyReset = prepared;
+//      int trackCount = sampleQueues.size();
+//      for (int i = 0; i < trackCount; i++) {
+//        sampleQueues.valueAt(i).reset(!prepared || trackEnabledStates[i]);
+//      }
+      loadable.setLoadPosition(0,0);
     }
   }
 
