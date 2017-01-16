@@ -294,7 +294,10 @@ public final class Loader implements LoaderErrorThrower {
           try {
             loadable.load();
           } finally {
-            TraceUtil.endSection();
+            try {
+              TraceUtil.endSection();
+            } catch (Exception e) {
+            }
           }
         }
         if (!released) {
